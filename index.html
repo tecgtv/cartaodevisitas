@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cartão de visitas interativo - Motorista Welmington">
+<title>Motorista Welmington — Cartão Digital</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<main class="pagina">
+
+    <header class="titulo">
+        <h1>MOTORISTA WELMINGTON</h1>
+        <p>Cartão digital interativo</p>
+    </header>
+
+    <div
+        class="flip-card"
+        id="flipCard"
+        tabindex="0"
+        role="button"
+        aria-label="Virar cartão"
+        aria-pressed="false"
+    >
+        <div class="flip-inner">
+
+            <!-- FRENTE: imagem fornecida pelo usuário, incorporada integralmente em Base64. -->
+            <section class="face front" aria-label="Frente do cartão">
+                <img
+                    src="assets/imagens/frente.jpg"
+                    alt="Frente do cartão de visitas do Motorista Welmington"
+                >
+
+                <!-- Área clicável sobre o telefone da arte. -->
+                <a
+                    class="whatsapp-link"
+                    href="https://wa.me/5521990646585"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir conversa no WhatsApp com Motorista Welmington"
+                    title="Conversar pelo WhatsApp"
+                ></a>
+            </section>
+
+            <!-- VERSO: mantido conforme o HTML original; ainda não foi incorporado,
+                 pois a imagem do verso não foi anexada nesta conversa. -->
+            <section class="face back" aria-label="Verso do cartão">
+                <img
+                    src="assets/imagens/verso.jpg"
+                    alt="Verso do cartão de visitas do Motorista Welmington"
+                >
+            </section>
+
+        </div>
+    </div>
+
+    <div class="controles">
+        <button id="flipButton" type="button">↻ Virar cartão</button>
+        <span class="status" id="status">Frente</span>
+    </div>
+
+    <p class="rodape">
+        Clique no cartão, no botão ou pressione Enter/Espaço para virar.
+    </p>
+</main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
